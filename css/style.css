@@ -1,0 +1,364 @@
+/* Базовые цвета (Basic colors) */
+/*    Базовые настройки страницы   */
+html {
+  font-size: 10px;
+}
+html button:active,
+html button:focus {
+  outline: none;
+}
+body {
+  font-family: 'Scada', sans-serif;
+  background-color: #e4e5e7;
+}
+a {
+  font-weight: 600;
+  font-size: 1.7rem;
+  color: #343e5c;
+}
+a:hover {
+  text-decoration: none;
+}
+/*    Шаблон для шрифтов , ссылки и текст        */
+.text-header {
+  margin-left: 0.5rem;
+  font-weight: 600;
+  font-size: 1.7rem;
+  color: #343e5c;
+}
+.text-link {
+  text-align: center;
+}
+.text-bag {
+  margin-left: 3px;
+}
+.text-form {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 2.7rem;
+  color: #343e5c;
+  text-align: center;
+  height: 6rem;
+  line-height: 6rem;
+}
+.btn-primary {
+  margin-top: 7rem;
+  height: 4rem;
+  width: 16rem;
+  border-radius: 2.6rem;
+  font-size: 1.6rem;
+}
+.btn-buynow {
+  width: 89%;
+  text-align: right;
+}
+.btn-buynow .btn-light {
+  border: 2px solid #e3e8f0;
+  border-radius: 8px;
+  margin-top: 1rem;
+  height: 4rem;
+  width: 20%;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #343e5c;
+  font-family: 'Montserrat', sans-serif;
+}
+/*    Настройки шапки страницы     */
+main {
+  background-color: white;
+}
+main .container-fluid {
+  width: 90%;
+}
+main .header {
+  height: 7rem;
+  line-height: 4.5rem;
+  padding: 1rem;
+}
+main .wrap {
+  outline: 0;
+  display: table;
+  width: 100%;
+  height: 4.5rem;
+}
+main .wrap-block {
+  display: table-cell;
+  vertical-align: middle;
+}
+main .sign-in-btn {
+  display: block;
+  border-radius: 16px;
+  border-width: 2px;
+  border-color: #e3e8f0;
+  border-style: solid;
+  width: 9rem;
+  height: 3.5rem;
+  outline: 0;
+  font-weight: 600;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+main .sign-in-btn:hover {
+  cursor: pointer;
+  border-color: #949aae;
+}
+main .bag {
+  text-align: right;
+}
+/*   Слайдер*/
+.stock {
+  height: 60rem;
+  overflow: hidden;
+  background-color: #1c1e23;
+}
+.stock .container-fluid {
+  width: 100%;
+}
+.stock-slaider {
+  height: 50rem;
+  width: 100%;
+}
+.stock-slaider h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 4.2rem;
+  color: aliceblue;
+}
+.stock-slaider p {
+  font-family: 'Myriad Pro', sans-serif;
+  font-size: 1.6rem;
+  color: aliceblue;
+}
+.stock-slaider-text {
+  float: left;
+  padding: 12rem 0 0 5rem;
+}
+.stock .arrow {
+  top: 50%;
+  position: absolute;
+  z-index: 99;
+  width: 4.2rem;
+  height: 4.2rem;
+  border: none;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  outline: 0;
+}
+.stock .arrow:focus {
+  outline: 0;
+}
+.stock .prev {
+  left: 0;
+  background: url(../img/slaider-img/Prev.png) center no-repeat;
+  background-size: 70%;
+}
+.stock .next {
+  right: 0;
+  background: url(../img/slaider-img/Next.png) center no-repeat;
+  background-size: 70%;
+}
+.stock .next:active,
+.stock .next :hover,
+.stock .next :focus {
+  outline: 0;
+}
+/*    Основная часть сайта         */
+.catalog {
+  height: auto;
+  margin-top: 3rem;
+  font-family: 'Montserrat', sans-serif;
+}
+.catalog .container-fluid {
+  width: 85%;
+}
+.catalog-title {
+  line-height: 5.5rem;
+  text-align: center;
+  font-size: 2.9rem;
+  font-weight: 600;
+  color: #343e5c;
+}
+.catalog .placeholder {
+  background-color: #ffffff;
+  border-radius: 0.8rem;
+  height: auto;
+  margin-bottom: 2rem;
+  min-height: 5.5rem;
+  text-align: center;
+}
+.catalog .placeholder-img {
+  margin: auto;
+  max-width: 100%;
+  max-height: 25rem;
+  text-align: center;
+  overflow: hidden;
+}
+.catalog .placeholder-data {
+  margin-top: 2rem;
+  min-height: 9rem;
+}
+.catalog .placeholder-data h1 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #1c1e23;
+}
+.catalog .placeholder-data p {
+  margin-bottom: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #b8bfd3;
+}
+.catalog .placeholder-data p:last-child {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #343e5c;
+}
+.catalog-list {
+  width: 95%;
+}
+.catalog-list button {
+  height: 4rem;
+  margin: 2.5rem 2.5rem 2.5rem 2.5rem;
+}
+.catalog .search input {
+  height: 5.5rem;
+  outline: none;
+  border: none;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #343e5c;
+}
+.catalog .search button {
+  border: none;
+  height: 5.5rem;
+  width: 6rem;
+  margin: 0 0 0 0;
+  background-color: white;
+}
+/*  Медиа запросы*/
+@media screen and (max-width: 479px) {
+  .container-fluid {
+    width: 100%;
+    padding: 0 0 0 0;
+  }
+  .header {
+    height: 7rem;
+  }
+  .stock {
+    height: 50rem;
+  }
+  .stock-slaider img {
+    margin: auto;
+    height: 60%;
+    width: 30rem;
+  }
+  .stock-slaider-text {
+    float: none;
+    text-align: center;
+    padding: 1rem 0 5rem 0;
+    margin-bottom: 1rem;
+  }
+  .stock-slaider h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 2.8rem;
+    color: aliceblue;
+  }
+  .stock-slaider p {
+    display: none;
+  }
+  .stock-item .btn-primary {
+    margin-top: 0rem;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .stock-img {
+    height: 40rem;
+    width: 100%;
+    overflow: hidden;
+  }
+  .stock-img img {
+    margin: auto;
+    max-width: 100%;
+    max-height: 90%;
+  }
+  .stock {
+    text-align: center;
+    height: 55rem;
+  }
+  .stock-slaider-text {
+    float: none;
+    text-align: center;
+    padding: 1rem 0 5rem 0;
+    margin-bottom: 1rem;
+  }
+  .stock-slaider h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 2.8rem;
+    color: aliceblue;
+  }
+  .stock-slaider p {
+    display: none;
+  }
+  .stock-item .btn-primary {
+    margin-top: 0rem;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 991px) {
+  .header {
+    height: 10rem;
+  }
+  .stock-img {
+    height: 40rem;
+    width: 100%;
+    overflow: hidden;
+  }
+  .stock-img img {
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .stock {
+    height: 60rem;
+  }
+  .stock-slaider-text {
+    padding: 1rem 0 5rem 0;
+  }
+  .stock-slaider-text h1 {
+    font-size: 3rem;
+  }
+  .stock-slaider-text p {
+    text-align: justify;
+    white-space: pre-line;
+  }
+  .stock-item {
+    text-align: center;
+  }
+  .stock-item .btn-primary {
+    margin-top: 0rem;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 9000px) {
+  .stock-slaider-text {
+    display: inline-block;
+    width: 40%;
+  }
+  .stock-slaider-text p {
+    text-align: justify;
+    white-space: pre-line;
+  }
+  .stock-img {
+    height: 60rem;
+    width: 60%;
+    overflow: hidden;
+  }
+  .stock-img img {
+    float: right;
+    max-width: 90%;
+    height: auto;
+  }
+  .second {
+    margin-top: 10rem;
+  }
+}
