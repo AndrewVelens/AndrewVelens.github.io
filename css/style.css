@@ -187,6 +187,7 @@ main .bag {
   text-align: center;
 }
 .catalog .placeholder-img {
+  padding-top: 1rem;
   margin: auto;
   max-width: 100%;
   max-height: 25rem;
@@ -213,16 +214,54 @@ main .bag {
   font-weight: 600;
   color: #343e5c;
 }
-.catalog-list {
-  width: 95%;
+.catalog .placeholder .large-box {
+  margin-left: 3rem;
+  text-align: left;
+}
+.catalog .placeholder .large-box p {
+  margin-top: 3rem;
+}
+.catalog .placeholder .large-price {
+  position: absolute;
+  top: 1rem;
+  left: 4rem;
+  padding: 0.3rem 1rem 0.3rem 1rem ;
+  border-radius: 0.6rem;
+  background-color: #1c1e23;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+.catalog .placeholder .large-img {
+  padding: 0 0 0 0;
+  border-radius: 0.8rem;
+}
+.catalog .placeholder .large-img img {
+  width: 100%;
+  min-height: 25rem;
+}
+.catalog .placeholder .large-btn {
+  position: absolute;
+  right: 10%;
+  top: 75%;
+}
+.catalog .placeholder .large-btn button {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #3a405b;
+  border-width: 2px;
+  border-color: #f0f2f7;
+  border-style: solid;
+  width: 117px;
+  height: 30px;
 }
 .catalog-list button {
   height: 4rem;
   margin: 2.5rem 2.5rem 2.5rem 2.5rem;
 }
 .catalog .search input {
+  border-radius: 0.8rem;
   height: 5.5rem;
-  outline: none;
   border: none;
   font-size: 1.6rem;
   font-weight: 600;
@@ -232,8 +271,31 @@ main .bag {
   border: none;
   height: 5.5rem;
   width: 6rem;
-  margin: 0 0 0 0;
   background-color: white;
+}
+.catalog .accordion .card {
+  border-radius: 0.8rem;
+}
+.catalog .accordion .card-body {
+  background-color: #e0e4ed;
+}
+.catalog .accordion .card-body button {
+  width: 100%;
+  background-color: #e0e4ed;
+}
+.catalog .accordion button {
+  padding: 0 0 0 0;
+  border: none;
+  height: 4.3rem;
+  background-color: white;
+  border-radius: 1rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #343e5c;
+}
+.catalog .accordion button:hover {
+  cursor: pointer;
+  border-color: white;
 }
 /*  Медиа запросы*/
 @media screen and (max-width: 479px) {
