@@ -273,17 +273,17 @@ main .bag {
   width: 6rem;
   background-color: white;
 }
-.catalog .accordion .card {
+.catalog .accordion1 .card {
   border-radius: 0.8rem;
 }
-.catalog .accordion .card-body {
+.catalog .accordion1 .card-body {
   background-color: #e0e4ed;
 }
-.catalog .accordion .card-body button {
+.catalog .accordion1 .card-body button {
   width: 100%;
   background-color: #e0e4ed;
 }
-.catalog .accordion button {
+.catalog .accordion1 button {
   padding: 0 0 0 0;
   border: none;
   height: 4.3rem;
@@ -293,7 +293,7 @@ main .bag {
   font-weight: 600;
   color: #343e5c;
 }
-.catalog .accordion button:hover {
+.catalog .accordion1 button:hover {
   cursor: pointer;
   border-color: white;
 }
