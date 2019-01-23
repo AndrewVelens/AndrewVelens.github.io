@@ -2,6 +2,7 @@
 /*    Базовые настройки страницы   */
 html {
   font-size: 10px;
+  width: 100%;
 }
 html button:active,
 html button:focus {
