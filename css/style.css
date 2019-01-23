@@ -9,7 +9,7 @@ html button:focus {
 }
 body {
   font-family: 'Scada', sans-serif;
-  background-color: #e4e5e7;
+  background-color: #2b2c32;
 }
 a {
   font-weight: 600;
@@ -296,6 +296,38 @@ main .bag {
 .catalog .accordion1 button:hover {
   cursor: pointer;
   border-color: white;
+}
+.catalog .week_sales h3 {
+  padding-top: 2rem;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #343e5c;
+}
+.feedback {
+  text-align: center;
+  background-color: white;
+  min-height: 30rem;
+}
+.feedback h4 {
+  padding-top: 5rem;
+  font-size: 3.2rem;
+  font-weight: 900;
+  color: #343e5c;
+}
+.feedback h3 {
+  padding-top: 2rem;
+  font-size: 2rem;
+  font-weight: 900;
+  color: #343e5c;
+}
+.feedback p {
+  font-size: 1.3rem;
+  font-weight: 900;
+  color: #343e5c;
+  padding-bottom: 5rem;
+}
+footer {
+  height: 25rem;
 }
 /*  Медиа запросы*/
 @media screen and (max-width: 479px) {

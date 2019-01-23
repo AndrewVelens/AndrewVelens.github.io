@@ -8,6 +8,7 @@
 @text-color: #1c1e23;
 @slaider-bg-color:#1c1e23;
 @not-active:#b8bfd3;
+@bg-dark: #2b2c32;
 
 
 
@@ -21,7 +22,7 @@ html{
 }
 body{
     font-family: 'Scada', sans-serif;
-    background-color: @bg-color ;
+    background-color: @bg-dark ;
 }
 a{
     font-weight: 600;
@@ -203,6 +204,8 @@ main{
         margin-bottom: 2rem;
         min-height: 5.5rem;
         text-align: center;
+     
+       
         &-img{
             padding-top: 1rem;
             margin: auto;
@@ -210,6 +213,7 @@ main{
             max-height: 25rem;
             text-align: center;
             overflow: hidden;
+             
         }
         &-data{
             margin-top: 2rem;
@@ -313,10 +317,33 @@ main{
             }
         }
     }
+    .week_sales{
+        h3{ 
+            padding-top: 2rem;
+            .font(2rem;600;@text-link-color);
+        }
+    }
 }
-
-
-
+.feedback{
+    text-align: center;
+    background-color: white;
+    min-height: 30rem;
+    h4{
+        padding-top: 5rem;
+         .font(3.2rem;900;@text-link-color);
+    }
+    h3{
+        padding-top: 2rem;
+         .font(2rem;900;@text-link-color);
+    }
+    p{
+        .font(1.3rem;900;@text-link-color); 
+        padding-bottom: 5rem; 
+    }
+}
+footer{
+    height: 25rem;
+}
 
                     /*  Медиа запросы*/
 @media screen and (max-width:479px) {
