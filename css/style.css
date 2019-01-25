@@ -189,7 +189,6 @@ main .bag {
 }
 .catalog .placeholder-img {
   padding-top: 1rem;
-  margin: auto;
   max-width: 100%;
   max-height: 25rem;
   text-align: center;
@@ -328,7 +327,34 @@ main .bag {
   padding-bottom: 5rem;
 }
 footer {
-  height: 25rem;
+  height: 20rem;
+}
+footer .container-fluid {
+  width: 86%;
+}
+footer-placeholder {
+  padding-top: 7rem;
+}
+footer .placeholder {
+  height: 9rem;
+  margin-top: 7rem;
+  border-bottom: 2px solid white;
+}
+footer .placeholder-medium {
+  height: 3rem;
+  line-height: 3rem;
+}
+footer .placeholder-medium p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #ffffff;
+  text-align: center;
+  word-spacing: 1.4rem;
+}
+footer .placeholder img {
+  float: right;
+  margin-right: 0.6rem;
 }
 /*  Медиа запросы*/
 @media screen and (max-width: 479px) {
