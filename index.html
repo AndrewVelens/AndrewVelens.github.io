@@ -6,8 +6,10 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,900" rel="stylesheet">
-    <link href="http://allfont.ru/allfont.css?fonts=micra" rel="stylesheet" type="text/css" />
+    
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
 </head>
 <header>
     <div class="container-fluid">
@@ -35,11 +37,6 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      
-      
-      
-      
-      
       <div class="modal-body">
            <form class="formWithValidation field">
            <div>
@@ -56,7 +53,7 @@
            <label for="">Краткое описание:</label>
            </div>
            <div>
-               <input  type="text" class="TaskDescription field">
+               <textarea type="text" class="TaskDescription field" onkeyup = "check()" id="TaskField"  ></textarea>
            </div>
             </div>
            
@@ -71,6 +68,7 @@
                  <option value="2" id="Medium">Средний</option>
                  <option value="3" id="Low">Низкий</option>
              </select>
+             <input type="date" class="dateInf">
              
            </div>
             </div>
@@ -92,11 +90,26 @@
                 <div class="row justify-content-center ">
                     <div class="col-10">
                         <button id="createBtn" class="btn btn-primary"  data-toggle="modal" data-target="#exampleModalCenter">ДОБАВИТЬ <br> ЗАДАЧУ</button>
+                        <div class=" accordion">
+                    <div class="card">
+        <button class="" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Сортировка
+        </button>
+     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion" >
+      <div class="card-body">
+        <button>По дате</button>
+        <button>По приоритету</button>
+      </div>
+    
+  </div>
+                 </div>
+  </div>
                     </div>
+                </div>
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-10  ">
-                    <button class="btn btn-primary">СОРТИРОВКА</button></div>
+                    
                 </div>
             </div>
             <div class="col-10" >
@@ -105,7 +118,8 @@
                 </div>
             </div>
             </div>
-        </div>
+        
+    </div>
     </div>
 </main>
 <body>
