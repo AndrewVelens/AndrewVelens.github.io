@@ -31,7 +31,40 @@ header{
 }
 
 main{
-     
+    .accordion{
+        
+        margin-top: 3rem;
+       
+        .card{
+            
+            background-color: #5d0dff;
+            
+            &-body{
+                background-color: #5d0dff;
+               
+                button{
+                    width: 100%;
+                     .font(1.2rem;600;white);
+                    border-radius:  0 0 3rem 3rem;
+                    background-color:   #5d0dff;
+                }
+            }
+        }
+        
+        
+        button{
+            padding: 0 0 0 0;
+            border: none;
+            height: 4.3rem;
+            background-color: white;
+            
+            .font(1.3rem;600;white);
+            &:hover{
+                cursor: pointer;
+                border-color: white;
+            }
+        }
+    }
     
     .container-fluid{
         width: 100%;
@@ -41,15 +74,19 @@ main{
     .settings{
         text-align: center;
         background-color: #cbcfe4;
+        #createBtn{
+            margin-top: 3rem;
+        }
         button{
+            
             font-family: 'Micra', arial;
             line-height: 2rem;
             .font(1.8rem,400,white);
-            margin-top: 4rem;
+            
             background-color: #5d0dff;
             width: 100%;
             height: 6rem;
-            border-radius: 2rem;
+            
             :active{
                 outline: 0;
             }
@@ -62,7 +99,7 @@ main{
         width: 100%;
         background-color: #5d0dff;
         margin-top: 4rem;
-        min-height: 7rem;
+     
         border-radius: 0.8rem;
         opacity: 0.87;
         div{
@@ -81,52 +118,69 @@ main{
             }
         }
         &-task{
-            min-width: 60rem;
+            min-width: 30%;
             height: 7rem;
             margin-left: 2rem;
            
             h1{
+            
             line-height: 7rem;
-            font-family: 'Micra', arial;
+            font-family: 'Montserrat', arial;
             .font(3rem,400,white);
             }
         }
         &-description{
-            font-family: 'Micra', arial;
-            .font(1.2rem,400,white);
-             max-width:60rem;}
+            
+            font-family: 'Montserrat', arial;
+            .font(2rem,400,white);
+             min-width:40%;}
         &-data{
-            font-family: 'Micra', arial;
-            .font(1.2rem,400,white);
+            font-family: 'Montserrat', arial;
+            .font(2rem,400,white);
             line-height: 7rem;
             height: 7rem;
         }
         &-status{
-            margin-left: 1rem;
-            .checkbox{
-                
-                border-radius: 0.4rem;
-                background-color: aqua;
-                line-height: 7rem;
-            }
+            margin-left: 3rem;
+            
         }
              
     }
     .modal{
+        .close{
+            margin: 0;
+            padding: 1rem 1rem 0 0;
+        }
         &-content{
             width: 200rem;
         }
         &-header{
-            text-align: center;
+            width: auto;
         }
         &-title{
-            text-align: center;
-    font-family: 'Micra', arial;
-    .font(3rem,400,black);
+            
+            margin: auto;
+            font-family: 'Montserrat', arial;
+            .font(3rem,400,black);
     }
         &-body{
+            input{
+                width: 80%;
+                margin: 2rem;
+            }
+            textarea{
+                width: 80%;
+            }
+            select{
+                width: 80%; 
+            }
+            .btn{
+                width: 30%;
+                height: 3rem;
+                margin-top: 3rem;
+            }
             text-align: center;
-            font-family: 'Micra', arial;
+            font-family: 'Montserrat', arial;
             .font(2.4rem,400,black);
         }
     }
