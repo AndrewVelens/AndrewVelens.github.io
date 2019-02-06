@@ -1,165 +1,535 @@
+/* Базовые цвета (Basic colors) */
+/*    Базовые настройки страницы   */
 html {
   font-size: 10px;
-}
-header {
-  height: 15rem;
-  background-color: #ffb5b5;
-}
-header .container-fluid {
-  width: 97%;
-}
-header .logo {
-  height: 15rem;
-  line-height: 15rem;
-}
-header h1 {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 6rem;
-  font-weight: 600;
-  color: #ffffff;
-  line-height: 15rem;
-  color: whitesmoke;
-}
-main .accordion {
-  margin-top: 3rem;
-}
-main .accordion .card {
-  background-color: #5d0dff;
-}
-main .accordion .card-body {
-  background-color: #5d0dff;
-}
-main .accordion .card-body button {
   width: 100%;
+}
+html button:active,
+html button:focus {
+  outline: none;
+}
+body {
+  font-family: 'Scada', sans-serif;
+  background-color: #2b2c32;
+}
+a {
+  font-weight: 600;
+  font-size: 1.7rem;
+  color: #343e5c;
+}
+a:hover {
+  text-decoration: none;
+}
+/*    Шаблон для шрифтов , ссылки и текст        */
+.text-header {
+  margin-left: 0.5rem;
+  font-weight: 600;
+  font-size: 1.7rem;
+  color: #343e5c;
+}
+.text-link {
+  text-align: center;
+}
+.text-bag {
+  margin-left: 3px;
+}
+.text-form {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 2.7rem;
+  color: #343e5c;
+  text-align: center;
+  height: 6rem;
+  line-height: 6rem;
+}
+.btn-primary {
+  height: 4rem;
+  width: 16rem;
+  border-radius: 2.6rem;
+  font-size: 1.6rem;
+}
+.btn-buynow {
+  width: 89%;
+  text-align: right;
+}
+.btn-buynow .btn-light {
+  border: 2px solid #e3e8f0;
+  border-radius: 8px;
+  margin-top: 1rem;
+  height: 4rem;
+  width: 20%;
   font-size: 1.2rem;
   font-weight: 600;
-  color: #ffffff;
-  border-radius: 0 0 3rem 3rem;
-  background-color: #5d0dff;
+  color: #343e5c;
+  font-family: 'Montserrat', sans-serif;
 }
-main .accordion button {
+/*    Настройки шапки страницы     */
+main {
+  background-color: white;
+}
+main .container-fluid {
+  width: 90%;
+}
+main .header {
+  height: 7rem;
+  line-height: 4.5rem;
+  padding: 1rem;
+}
+main .wrap {
+  outline: 0;
+  display: table;
+  width: 100%;
+  height: 4.5rem;
+}
+main .wrap-block {
+  display: table-cell;
+  vertical-align: middle;
+}
+main .sign-in-btn {
+  display: block;
+  border-radius: 16px;
+  border-width: 2px;
+  border-color: #e3e8f0;
+  border-style: solid;
+  width: 9rem;
+  height: 3.5rem;
+  outline: 0;
+  font-weight: 600;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+main .sign-in-btn:hover {
+  cursor: pointer;
+  border-color: #949aae;
+}
+main .bag {
+  text-align: right;
+}
+main .modal-body {
+  text-align: center;
+}
+main .modal-body form {
+  width: 68%;
+  margin: auto;
+  text-align: left;
+}
+main .modal h5 {
+  font-size: 2.9rem;
+  font-weight: 600;
+  color: #343e5c;
+}
+main .modal label {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #343e5c;
+}
+main .modal input {
+  padding: 1rem;
+  border: none;
+  border-radius: 1.4rem;
+  margin-bottom: 1rem;
+  background: #e4e5e7;
+  font-size: 1.6rem;
+  width: 100%;
+}
+main .modal input:focus {
+  outline: none;
+}
+main .modal .btn-primary {
+  background-color: #343e5c;
+  border: none;
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #ffffff;
+}
+main .modal .btn-primary:hover {
+  outline: 0;
+}
+main .autority {
+  text-align: center;
+}
+main .autority .linksImg {
+  margin-bottom: 1rem;
+}
+/*   Слайдер*/
+.stock {
+  height: 60rem;
+  overflow: hidden;
+  background-color: #1c1e23;
+}
+.stock .container-fluid {
+  width: 100%;
+}
+.stock-slaider {
+  height: 50rem;
+  width: 100%;
+}
+.stock-slaider h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 4.2rem;
+  color: aliceblue;
+}
+.stock-slaider p {
+  font-family: 'Myriad Pro', sans-serif;
+  font-size: 1.6rem;
+  color: aliceblue;
+}
+.stock-slaider-text {
+  float: left;
+  padding: 12rem 0 0 5rem;
+}
+.stock .arrow {
+  top: 50%;
+  position: absolute;
+  z-index: 99;
+  width: 4.2rem;
+  height: 4.2rem;
+  border: none;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  outline: 0;
+}
+.stock .arrow:focus {
+  outline: 0;
+}
+.stock .prev {
+  left: 0;
+  background: url(../img/slaider-img/Prev.png) center no-repeat;
+  background-size: 70%;
+}
+.stock .next {
+  right: 0;
+  background: url(../img/slaider-img/Next.png) center no-repeat;
+  background-size: 70%;
+}
+.stock .next:active,
+.stock .next :hover,
+.stock .next :focus {
+  outline: 0;
+}
+.stock .btn-primary {
+  margin-top: 10rem;
+}
+/*    Основная часть сайта         */
+.catalog {
+  height: auto;
+  margin-top: 3rem;
+  font-family: 'Montserrat', sans-serif;
+}
+.catalog .container-fluid {
+  width: 85%;
+}
+.catalog-title {
+  line-height: 5.5rem;
+  text-align: center;
+  font-size: 2.9rem;
+  font-weight: 600;
+  color: #343e5c;
+}
+.catalog .placeholder {
+  background-color: #ffffff;
+  border-radius: 0.8rem;
+  height: auto;
+  margin-bottom: 2rem;
+  min-height: 5.5rem;
+  text-align: center;
+}
+.catalog .placeholder-img {
+  padding-top: 1rem;
+  max-width: 100%;
+  max-height: 25rem;
+  text-align: center;
+  overflow: hidden;
+}
+.catalog .placeholder-data {
+  margin-top: 2rem;
+  min-height: 9rem;
+}
+.catalog .placeholder-data h1 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #1c1e23;
+}
+.catalog .placeholder-data p {
+  margin-bottom: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #b8bfd3;
+}
+.catalog .placeholder-data p:last-child {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #343e5c;
+}
+.catalog .placeholder .large-box {
+  margin-left: 3rem;
+  text-align: left;
+}
+.catalog .placeholder .large-box p {
+  margin-top: 3rem;
+}
+.catalog .placeholder .large-price {
+  position: absolute;
+  top: 1rem;
+  left: 4rem;
+  padding: 0.3rem 1rem 0.3rem 1rem ;
+  border-radius: 0.6rem;
+  background-color: #1c1e23;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+.catalog .placeholder .large-img {
+  padding: 0 0 0 0;
+  border-radius: 0.8rem;
+}
+.catalog .placeholder .large-img img {
+  width: 100%;
+  min-height: 25rem;
+}
+.catalog .placeholder .large-btn {
+  position: absolute;
+  right: 10%;
+  top: 75%;
+}
+.catalog .placeholder .large-btn button {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #3a405b;
+  border-width: 2px;
+  border-color: #f0f2f7;
+  border-style: solid;
+  width: 117px;
+  height: 30px;
+}
+.catalog-list button {
+  height: 4rem;
+  margin: 2.5rem 2.5rem 2.5rem 2.5rem;
+}
+.catalog .search input {
+  border-radius: 0.8rem;
+  height: 5.5rem;
+  border: none;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #343e5c;
+}
+.catalog .search button {
+  border: none;
+  height: 5.5rem;
+  width: 6rem;
+  background-color: white;
+}
+.catalog .accordion1 .card {
+  border-radius: 0.8rem;
+}
+.catalog .accordion1 .card-body {
+  background-color: #e0e4ed;
+}
+.catalog .accordion1 .card-body button {
+  width: 100%;
+  background-color: #e0e4ed;
+}
+.catalog .accordion1 button {
   padding: 0 0 0 0;
   border: none;
   height: 4.3rem;
   background-color: white;
+  border-radius: 1rem;
   font-size: 1.3rem;
   font-weight: 600;
-  color: #ffffff;
+  color: #343e5c;
 }
-main .accordion button:hover {
+.catalog .accordion1 button:hover {
   cursor: pointer;
   border-color: white;
 }
-main .container-fluid {
-  width: 100%;
-  height: 100vh;
-}
-main .settings {
-  text-align: center;
-  background-color: #cbcfe4;
-}
-main .settings #createBtn {
-  margin-top: 3rem;
-}
-main .settings button {
-  font-family: 'Micra', arial;
-  line-height: 2rem;
-  font-size: 1.8rem;
-  font-weight: 400;
-  color: #ffffff;
-  background-color: #5d0dff;
-  width: 100%;
-  height: 6rem;
-}
-main .settings button :active {
-  outline: 0;
-}
-main .settings button :focus {
-  outline: 0;
-}
-main .placeholder {
-  width: 100%;
-  background-color: #5d0dff;
-  margin-top: 4rem;
-  border-radius: 0.8rem;
-  opacity: 0.87;
-}
-main .placeholder div {
-  display: inline-block;
-}
-main .placeholder-priority-clr {
-  margin-left: 2rem;
-  height: 2rem;
-  width: 2rem;
-  border-radius: 2rem;
-  background-color: red;
-}
-main .placeholder-task {
-  min-width: 30%;
-  height: 7rem;
-  margin-left: 2rem;
-}
-main .placeholder-task h1 {
-  line-height: 7rem;
-  font-family: 'Montserrat', arial;
-  font-size: 3rem;
-  font-weight: 400;
-  color: #ffffff;
-}
-main .placeholder-description {
-  font-family: 'Montserrat', arial;
+.catalog .week_sales h3 {
+  padding-top: 2rem;
   font-size: 2rem;
-  font-weight: 400;
-  color: #ffffff;
-  min-width: 40%;
+  font-weight: 600;
+  color: #343e5c;
 }
-main .placeholder-data {
-  font-family: 'Montserrat', arial;
-  font-size: 2rem;
-  font-weight: 400;
-  color: #ffffff;
-  line-height: 7rem;
-  height: 7rem;
-}
-main .placeholder-status {
-  margin-left: 3rem;
-}
-main .modal .close {
-  margin: 0;
-  padding: 1rem 1rem 0 0;
-}
-main .modal-content {
-  width: 200rem;
-}
-main .modal-header {
-  width: auto;
-}
-main .modal-title {
-  margin: auto;
-  font-family: 'Montserrat', arial;
-  font-size: 3rem;
-  font-weight: 400;
-  color: #000000;
-}
-main .modal-body {
+.feedback {
   text-align: center;
-  font-family: 'Montserrat', arial;
-  font-size: 2.4rem;
-  font-weight: 400;
-  color: #000000;
+  background-color: white;
+  min-height: 30rem;
 }
-main .modal-body input {
-  width: 80%;
-  margin: 2rem;
+.feedback h4 {
+  padding-top: 5rem;
+  font-size: 3.2rem;
+  font-weight: 900;
+  color: #343e5c;
 }
-main .modal-body textarea {
-  width: 80%;
+.feedback h3 {
+  padding-top: 2rem;
+  font-size: 2rem;
+  font-weight: 900;
+  color: #343e5c;
 }
-main .modal-body select {
-  width: 80%;
+.feedback p {
+  font-size: 1.3rem;
+  font-weight: 900;
+  color: #343e5c;
+  padding-bottom: 5rem;
 }
-main .modal-body .btn {
-  width: 30%;
+footer {
+  height: 20rem;
+}
+footer .container-fluid {
+  width: 86%;
+}
+footer-placeholder {
+  padding-top: 7rem;
+}
+footer .placeholder {
+  height: 9rem;
+  margin-top: 7rem;
+  border-bottom: 2px solid white;
+}
+footer .placeholder-medium {
   height: 3rem;
-  margin-top: 3rem;
+  line-height: 3rem;
+}
+footer .placeholder-medium p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #ffffff;
+  text-align: center;
+  word-spacing: 1.4rem;
+}
+footer .placeholder img {
+  float: right;
+  margin-right: 0.6rem;
+}
+/*  Медиа запросы*/
+@media screen and (max-width: 479px) {
+  .container-fluid {
+    width: 100%;
+    padding: 0 0 0 0;
+  }
+  .header {
+    height: 7rem;
+  }
+  .stock {
+    height: 50rem;
+  }
+  .stock-slaider img {
+    margin: auto;
+    height: 60%;
+    width: 30rem;
+  }
+  .stock-slaider-text {
+    float: none;
+    text-align: center;
+    padding: 1rem 0 5rem 0;
+    margin-bottom: 1rem;
+  }
+  .stock-slaider h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 2.8rem;
+    color: aliceblue;
+  }
+  .stock-slaider p {
+    display: none;
+  }
+  .stock-item .btn-primary {
+    margin-top: 0rem;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .stock-img {
+    height: 40rem;
+    width: 100%;
+    overflow: hidden;
+  }
+  .stock-img img {
+    margin: auto;
+    max-width: 100%;
+    max-height: 90%;
+  }
+  .stock {
+    text-align: center;
+    height: 55rem;
+  }
+  .stock-slaider-text {
+    float: none;
+    text-align: center;
+    padding: 1rem 0 5rem 0;
+    margin-bottom: 1rem;
+  }
+  .stock-slaider h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 2.8rem;
+    color: aliceblue;
+  }
+  .stock-slaider p {
+    display: none;
+  }
+  .stock-item .btn-primary {
+    margin-top: 0rem;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 991px) {
+  main {
+    height: 10rem;
+  }
+  .stock-img {
+    height: 40rem;
+    width: 100%;
+    overflow: hidden;
+  }
+  .stock-img img {
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .stock {
+    height: 60rem;
+  }
+  .stock-slaider-text {
+    padding: 1rem 0 5rem 0;
+  }
+  .stock-slaider-text h1 {
+    font-size: 3rem;
+  }
+  .stock-slaider-text p {
+    text-align: justify;
+    white-space: pre-line;
+  }
+  .stock-item {
+    text-align: center;
+  }
+  .stock-item .btn-primary {
+    margin-top: 0rem;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 9000px) {
+  .stock-slaider-text {
+    display: inline-block;
+    width: 40%;
+  }
+  .stock-slaider-text p {
+    text-align: justify;
+    white-space: pre-line;
+  }
+  .stock-img {
+    height: 60rem;
+    width: 60%;
+    overflow: hidden;
+  }
+  .stock-img img {
+    float: right;
+    max-width: 90%;
+    height: auto;
+  }
+  .second {
+    margin-top: 10rem;
+  }
 }
