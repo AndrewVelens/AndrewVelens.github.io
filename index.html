@@ -11,13 +11,13 @@
     <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,900" rel="stylesheet">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 
     
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/main.js" defer></script>
    
 </head>
 <body>
@@ -152,7 +152,7 @@
     <div class="catalog-title placeholder" id="katalog">Каталог</div>
     </div>
     <div class="col-lg-8      col-xl-9">
-    <div class="catalog-title placeholder" >Популярные товары</div>
+    <div class="catalog-title placeholder" onclick="location.href='http://www.example.com';" style="cursor:pointer;">Популярные товары</div>
     </div>
 </div><!-- 1 ряд  -->
 <div class="row">
@@ -285,7 +285,7 @@
     <div class="placeholder">
     </div>
     </div>
-    <!-- Колонка с товарами   -->  <div class="col-lg-8 col-xl-9">
+    <!-- Колонка с товарами   -->  <div class="col-lg-8 col-xl-9 placeholderMass">
         <div class="row">
         <div class="col-xl-4 col-lg-6">
             <div class="placeholder " link="http://www.google.at/">
