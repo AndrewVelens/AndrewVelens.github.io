@@ -11,13 +11,13 @@
     <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,900" rel="stylesheet">
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 
     
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
-    
+    <script src="js/main.js"></script>
    
 </head>
 <body>
@@ -114,7 +114,7 @@
                 <div class="stock-slaider-text">
                 <h1>iPhone 6 32Gb Black </h1> 
                 <p>Смартфон с великолепным HD-дисплеем Retina 4,7 дюймов в невероятно тонком бесшовном корпусе, внутри которого упакованы самые передовые технологии. Созданный с высокой точностью из анодированного алюминия корпус unibody iPhone идеально прилегает к формованному стеклу дисплея, образуя абсолютно гладкую и цельную поверхность.</p>
-                <button class="btn btn-primary">Подробнее</button>
+                <button class="btn btn-primary" id="buttonCrt">Подробнее</button>
                 </div>
                 
                 <div class="stock-img first">
@@ -149,10 +149,10 @@
 <div class="container-fluid ">
 <div class="row"> 
     <div class="col-lg-4      col-xl-3">
-    <div class="catalog-title placeholder">Каталог</div>
+    <div class="catalog-title placeholder" id="katalog">Каталог</div>
     </div>
     <div class="col-lg-8      col-xl-9">
-    <div class="catalog-title placeholder">Популярные товары</div>
+    <div class="catalog-title placeholder" >Популярные товары</div>
     </div>
 </div><!-- 1 ряд  -->
 <div class="row">
@@ -288,7 +288,7 @@
     <!-- Колонка с товарами   -->  <div class="col-lg-8 col-xl-9">
         <div class="row">
         <div class="col-xl-4 col-lg-6">
-            <div class="placeholder">
+            <div class="placeholder " link="http://www.google.at/">
                 <div class="placeholder-img">
            <img src="img/catalogImg/Watch.png">
         </div>
