@@ -426,6 +426,13 @@ footer{
 
                     /*  Медиа запросы*/
 @media screen and (max-width:479px) {
+    
+    main{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    }
+    
     .container-fluid{
         width: 100%;
         padding: 0 0 0 0;
@@ -435,7 +442,10 @@ footer{
         height: 7rem;
     }
     .stock{
-        height: 50rem;
+        height: 57rem;
+           .header_div{
+            height: 7rem;
+    }
         &-slaider{
             
             img{
@@ -460,6 +470,7 @@ footer{
             p{
                 display: none;
             }
+         
     }
         &-item{
             .btn{
