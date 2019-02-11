@@ -1,0 +1,64 @@
+/* Базовые цвета (Basic colors) */
+@botton-color: #2754eb;
+@icons-color: #70c849;
+@text-link-color: #343e5c;
+@bg-color: #e4e5e7;
+@bg-light: #ffffff;
+@text-color-light: #949aae;
+@text-color: #1c1e23;
+@slaider-bg-color:#1c1e23;
+@not-active:#b8bfd3;
+@bg-dark: #2b2c32;
+
+body{
+    font-family: 'Scada', sans-serif;
+    background-color: @bg-light ;
+}
+.font(@fz:1.6rem , @fw:400, @fc:white){
+    font-size: @fz;
+    font-weight: @fw;
+    color: @fc;
+}
+main{
+.header{
+    background-color: @bg-dark;
+    .text-header{
+        .font(@fz:2rem , @fw:400, @fc:white)
+    }
+    .search{
+        line-height: 7rem;
+        input{
+            border-radius: 0.8rem;
+            height: 4rem;
+            border: none;
+            .font(1.6rem;600;@text-link-color);}
+        button{
+            border: none;
+            height: 4rem;
+            width: 4rem;
+            background-color:white;
+            border-radius: 0.8rem 0 0 0.8rem;
+        }
+        }
+    .wrap{
+        &-block{
+            .text-header{
+                .font(1.6rem;400;@bg-light);
+            }
+        }
+        
+    }
+    }}
+.product{
+margin-top: 2rem;
+    &-name{
+        font-family: 'Scada' , sans-serif;
+        .font(@fz:3.4rem , @fw:900, @fc:@text-color)
+    }
+    &-img{
+        max-width:60rem;
+        max-height:45rem;
+        background-color: black;
+    }
+}
+

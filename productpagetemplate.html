@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product page</title>
+    
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/Productstyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Scada" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,900" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+</head>
+<main>
+            <!-- Modal window -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Вход в личный кабинет</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+           <form>
+             <div>
+              <label>Email или номер телефона</label>
+              </div>
+              <div>  
+              <input type="email"><br>
+              <label>Пароль</label><br>
+              <input type="password">
+              </div>
+           </form>
+           <button class="btn btn-primary">Войти</button>
+           <hr>
+           <div class="autority">
+               <label>Вход через соцсети</label>
+                 <div class="linksImg">
+                  <a href="#"><img src="img/modalWindow/220px-Google__G__Logo.svg.png" width="40px" height="40px"></a>
+                  <a href="#"><img src="img/modalWindow/vk.png" width="40px" height="40px"></a>
+                  <a href="#"><img src="img/modalWindow/Facebook-2-512.png" width="40px" height="40px"></a>
+               </div>
+               <span>или</span><br>
+               <a href="#">Зарегистрироваться</a>
+           </div>
+      </div>
+    </div>
+  </div>
+
+    </div>
+            <!-- Header -->
+    <div class="header">
+        <div class="container-fluid">
+            <div class="row justify-content-between">
+               <div class="col-4">
+              <div class="row">
+               <div class="col-4 text-header">Каталог</div>
+               <div class="col-7 search">
+                 <div class="input-group ">
+                  <button class="btn btn-style"><a href="https://www.onliner.by/"><img src="img/SearchIcon.png"></a></button>
+                  <input type="text" class="form-control" placeholder="Я ищу...">
+               </div>
+               </div>
+               </div>     
+               </div>
+               <div class="col-auto">
+               <a href="index.html"> <img src="img/footer/Portland.png" alt="Portland"></a>
+               </div>
+               <div class="col-3 offset-1">
+               <div class="row justify-content-end">
+               <div class="col-4 text-header">Корзина</div>
+               <div class="col-5 "> 
+               <div class="wrap">
+               <div class="wrap-block">
+               <span id="createBtn" class=" btn sign-in-btn text-header"  data-toggle="modal" data-target="#exampleModalCenter">Вход</span>
+               </div>
+               </div>
+               </div>
+               </div>
+               </div>
+            </div>
+        </div>
+    </div>
+    
+</main>
+<section class="product">
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-auto">
+                <p class="product-name">MacBook Pro 2013</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+            <div class="product-img">
+            <img src="img/catalogImg/airpods.png" alt="">
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
+<body>
+</body>
+</html>

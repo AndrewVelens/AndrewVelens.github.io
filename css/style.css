@@ -412,16 +412,17 @@ footer .placeholder img {
     position: fixed;
     width: 100%;
     z-index: 999;
+    height: 5rem;
+  }
+  main .header {
+    padding-top: 0;
   }
   .container-fluid {
     width: 100%;
     padding: 0 0 0 0;
   }
-  .header {
-    height: 7rem;
-  }
   .stock {
-    height: 57rem;
+    height: 55rem;
   }
   .stock .header_div {
     height: 7rem;
