@@ -37,14 +37,55 @@ main .header .wrap-block .text-header {
 .product {
   margin-top: 2rem;
 }
+.product .container-fluid {
+  width: 89%;
+}
 .product-name {
-  font-family: 'Scada', sans-serif;
-  font-size: 3.4rem;
+  font-size: 4.2rem;
   font-weight: 900;
   color: #1c1e23;
 }
 .product-img {
-  max-width: 60rem;
-  max-height: 45rem;
-  background-color: black;
+  min-width: 45rem;
+  min-height: 45rem;
+  max-height: 50rem;
+  max-height: auto;
+  background-color: none;
+  overflow: hidden;
+}
+.product-img img {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+}
+.product-price {
+  text-align: center;
+}
+.product-price p {
+  font-family: 'Heebo', sans-serif;
+  font-size: 7.2rem;
+  font-weight: 700;
+  color: #383838;
+}
+.product-btn {
+  text-align: center;
+  margin-top: 3rem;
+}
+.product-btn .btn-primary {
+  background-color: #0085c8;
+  width: 25rem;
+  height: 6rem;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #dddddd;
+}
+.product-description {
+  margin-top: 4rem;
+  text-align: center;
+}
+.product-description p {
+  font-size: 2.2rem;
+  font-weight: 400;
+  color: #1c1e23;
 }

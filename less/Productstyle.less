@@ -50,15 +50,53 @@ main{
     }
     }}
 .product{
-margin-top: 2rem;
+    
+    margin-top: 2rem;
+    .container-fluid{
+    width: 89%;
+    }
     &-name{
-        font-family: 'Scada' , sans-serif;
-        .font(@fz:3.4rem , @fw:900, @fc:@text-color)
+        .font(@fz:4.2rem , @fw:900, @fc:@text-color)
     }
     &-img{
-        max-width:60rem;
-        max-height:45rem;
-        background-color: black;
+        min-width:45rem;
+        min-height:45rem;
+        max-height: 50rem;
+        max-height: auto;
+        background-color: none;
+        overflow: hidden;
+        img{
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            left: 50%;
+            
+        }
+    }
+    &-price{
+       
+        text-align: center;
+        p{
+            font-family: 'Heebo' , sans-serif;
+            .font(@fz:7.2rem , @fw:700, @fc:#383838)
+        }
+    }
+    &-btn{
+        text-align: center;
+        margin-top: 3rem;
+        .btn-primary{
+            background-color: #0085c8;
+            width: 25rem;
+            height:6rem;
+            .font(@fz:2rem , @fw:600, @fc:#dddddd)
+        }
+    }
+    &-description{
+        margin-top: 4rem;
+        text-align: center;
+        p{
+            .font(@fz:2.2rem , @fw:400, @fc:@text-color)
+        }
     }
 }
 

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/Productstyle.css">
     <link href="https://fonts.googleapis.com/css?family=Scada" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Heebo:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,900" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
@@ -58,23 +59,27 @@
         <div class="container-fluid">
             <div class="row justify-content-between">
                <div class="col-4">
-              <div class="row">
-               <div class="col-4 text-header">Каталог</div>
-               <div class="col-7 search">
-                 <div class="input-group ">
+              <div class="row justify-content-start ">
+               <div class="col-3 text-header">Каталог</div>
+               <div class="col-8 search">
+                 <div class="input-group">
                   <button class="btn btn-style"><a href="https://www.onliner.by/"><img src="img/SearchIcon.png"></a></button>
                   <input type="text" class="form-control" placeholder="Я ищу...">
                </div>
                </div>
                </div>     
                </div>
-               <div class="col-auto">
+               <div class="col-4">
+               <div class="row justify-content-center">
+               <div class="col-auto ">
                <a href="index.html"> <img src="img/footer/Portland.png" alt="Portland"></a>
                </div>
-               <div class="col-3 offset-1">
+               </div>
+               </div>
+               <div class="col-4">
                <div class="row justify-content-end">
-               <div class="col-4 text-header">Корзина</div>
-               <div class="col-5 "> 
+               <div class="col-auto text-header">Корзина</div>
+               <div class="col-auto "> 
                <div class="wrap">
                <div class="wrap-block">
                <span id="createBtn" class=" btn sign-in-btn text-header"  data-toggle="modal" data-target="#exampleModalCenter">Вход</span>
@@ -90,18 +95,39 @@
 </main>
 <section class="product">
     <div class="container-fluid">
-        <div class="row justify-content-center">
-            <div class="col-auto">
-                <p class="product-name">MacBook Pro 2013</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-6">
+       <div class="row justify-content-center">
+           <div class="col-auto">
+                <p class="product-name"> Apple Airpods</p>
+            </div> 
+       </div>
+       <div class="row justify-content-between">
+       <div class="col-auto">
             <div class="product-img">
-            <img src="img/catalogImg/airpods.png" alt="">
+            <img src="img/catalogImg/airpods.png" alt="mainImg" width="450px" height="450px">
             </div>
             </div>
-        </div>
+       <div class="col-5 align-self-center">  
+            <div class="row justify-content-center">
+            <div class="col-auto">
+            <div class="product-price">
+            <p>149.99$</p>
+            </div>
+            </div>
+            <div class="col-auto">
+            <div class="product-btn">
+            <button class='btn btn-primary '>Добавить в корзину</button>    
+            </div>
+            </div>
+            </div>
+            </div>
+       </div>
+       <div class="row justify-content-center">
+           <div class="col-11">
+               <div class="product-description">
+                   <p>15.6" 1920 x 1080 IPS, Intel Core i7 8550U 1800 МГц, 8ГБ, SSD 256 ГБ, NVIDIA GeForce MX150 2 ГБ, Windows 10, цвет крышки темно-серый, цвет корпуса темно-серый</p>
+               </div>
+           </div>
+       </div>
     </div>
 </section>
 <body>
