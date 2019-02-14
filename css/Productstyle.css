@@ -81,11 +81,90 @@ main .header .wrap-block .text-header {
   color: #dddddd;
 }
 .product-description {
-  margin-top: 4rem;
+  margin: 2rem 0 2rem 0;
   text-align: center;
 }
 .product-description p {
   font-size: 2.2rem;
   font-weight: 400;
   color: #1c1e23;
+}
+.product-parameteres {
+  margin-top: 2rem;
+}
+.product-parameteres-mainTitle {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #1c1e23;
+}
+.product-parameteres-title {
+  font-size: 2.2rem;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: #1c1e23;
+}
+.product-parameteres table {
+  width: 100%;
+}
+.product-parameteres table :first-child {
+  text-align: left;
+}
+.product-parameteres table th {
+  padding-left: 1rem;
+  border-radius: 0.4rem;
+}
+.product-parameteres table td {
+  text-align: right;
+  padding: 0rem 1rem 0 1rem;
+  font-size: 2rem;
+  font-weight: 400;
+  color: #1c1e23;
+}
+.feedback {
+  background-color: #1c1e23;
+  margin-top: 2rem;
+  height: auto;
+}
+.feedback a {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #ffffff;
+}
+.feedback-title {
+  margin-bottom: 1rem;
+}
+.feedback-title p {
+  margin: 1rem 0 0 0;
+  padding: 0 0 0 0;
+  font-size: 3rem;
+  font-weight: 400;
+  color: #ffffff;
+}
+.feedback-title p :last-child {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #ffffff;
+}
+.feedback-title :last-child {
+  margin: 0 0 0 0;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #ffffff;
+}
+.feedback-belly .avatar {
+  display: inline-block;
+  height: 10rem;
+  width: 10rem;
+  border-radius: 10rem;
+  background-color: white;
+}
+.feedback-belly .personal-name {
+  font-size: 2.4rem;
+  font-weight: 400;
+  color: #ffffff;
+}
+.feedback-belly .feedback-text p {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #ffffff;
 }

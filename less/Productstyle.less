@@ -92,11 +92,73 @@ main{
         }
     }
     &-description{
-        margin-top: 4rem;
+        margin: 2rem 0 2rem 0;
         text-align: center;
         p{
             .font(@fz:2.2rem , @fw:400, @fc:@text-color)
         }
     }
+    &-parameteres{
+    margin-top: 2rem;
+        &-mainTitle{
+        .font(@fz:3rem , @fw:600, @fc:@text-color) 
+        }
+        &-title{
+        .font(@fz:2.2rem , @fw:400, @fc:@bg-light);
+        background-color: @text-color;   
+        }   
+        table{
+        width:100%;
+        :first-child{
+        text-align: left;}
+        th{
+        padding-left: 1rem;
+        border-radius: 0.4rem;}
+        td{
+        text-align: right;
+        padding: 0rem 1rem 0 1rem;
+        .font(@fz:2rem , @fw:400, @fc:@text-color);}
+        }
+    }
+}
+.feedback{
+    background-color: @text-color;
+    margin-top: 2rem;
+    height: auto;
+    a{
+        .font(@fz:1.6rem , @fw:400, @fc:@bg-light);
+    }
+    &-title{
+        margin-bottom: 1rem;
+        p{
+        margin: 1rem 0 0 0;
+        padding: 0 0 0 0;
+        .font(@fz:3rem , @fw:400, @fc:white);
+            :last-child{
+              .font(@fz:1.6rem , @fw:400, @fc:white);  
+            }           
+    }
+        :last-child{
+            margin: 0 0 0 0;
+              .font(@fz:1.6rem , @fw:400, @fc:white);  
+            }   
+    }
+    &-belly{
+        .avatar{
+        display: inline-block;
+        height: 10rem;
+        width: 10rem;
+        border-radius: 10rem;
+        background-color: white;
+        }
+        .personal-name{
+        .font(@fz:2.4rem , @fw:400, @fc:white) 
+        }
+        .feedback-text{
+            p{
+        .font(@fz:1.8rem , @fw:400, @fc:@bg-light)    
+        }}
+    }
+    
 }
 
